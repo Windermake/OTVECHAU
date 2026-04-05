@@ -5,9 +5,12 @@
   "check_interval": 30,
   "screenshot_update_interval": 120,
   "streamers_to_track": [
-    "0TV3CHAU"
+    "0tv3chau"
   ],
   "allowed_chat_ids": [
     "@tut_otvechau"
+  ],
+  "admin_user_ids": [
+    1487919102
   ]
 }
