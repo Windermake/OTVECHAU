@@ -3,14 +3,12 @@
     "Сегодня ОЧЕНЬ ВАЖНЫЙ стрим, срочно заходите"
   ],
   "check_interval": 30,
-  "screenshot_update_interval": 120,
+  "screenshot_update_interval": 30,
   "streamers_to_track": [
-    "0tv3chau"
+    "0TV3CHAU"
   ],
   "allowed_chat_ids": [
     "@tut_otvechau"
   ],
-  "admin_user_ids": [
-    1487919102
-  ]
+  "stream_links_count": 3
 }
