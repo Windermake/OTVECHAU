@@ -1,4 +1,4 @@
-﻿import asyncio
+import asyncio
 import json
 import logging
 import os
@@ -109,11 +109,11 @@ def is_admin(user_id: int, admin_user_ids: set[int]) -> bool:
 def main_menu_keyboard() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(
         inline_keyboard=[
-            [InlineKeyboardButton(text="📊 Текущие настройки", callback_data="menu:show")],
-            [InlineKeyboardButton(text="👤 Стримеры", callback_data="menu:streamers")],
-            [InlineKeyboardButton(text="💬 Фразы", callback_data="menu:phrases")],
-            [InlineKeyboardButton(text="⏱ Интервал", callback_data="menu:interval")],
-            [InlineKeyboardButton(text="📣 Чаты", callback_data="menu:chats")],
+            [InlineKeyboardButton(text="Текущие настройки", callback_data="menu:show")],
+            [InlineKeyboardButton(text="Стримеры", callback_data="menu:streamers")],
+            [InlineKeyboardButton(text="Фразы", callback_data="menu:phrases")],
+            [InlineKeyboardButton(text="Интервал", callback_data="menu:interval")],
+            [InlineKeyboardButton(text="Чаты", callback_data="menu:chats")],
             [InlineKeyboardButton(text="🔄 Обновить", callback_data="menu:refresh")],
         ]
     )
@@ -591,7 +591,7 @@ async def run() -> None:
     settings = load_settings()
 
     bot_token = os.getenv("BOT_TOKEN") or settings.get("bot_token")
-    twitch_client_id = os.getenv("TWITCH_CLIENT_ID") or settings.get("twitch_client_id")
+    twitch_client_id = os.getenv("  ") or settings.get("twitch_client_id")
     twitch_client_secret = os.getenv("TWITCH_CLIENT_SECRET") or settings.get("twitch_client_secret")
 
     if not bot_token or not twitch_client_id or not twitch_client_secret:
